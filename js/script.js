@@ -4,6 +4,7 @@ createApp({
     data() {
         return {
             activeImg: 0,
+            active: 'active',
             slides: [
                 {
                     image: 'img/01.webp',
@@ -47,5 +48,8 @@ createApp({
                 this.activeImg++
             }
         }
+    },
+    mounted() {
+        console.log(this.slides)
     }
 }).mount('#app')
